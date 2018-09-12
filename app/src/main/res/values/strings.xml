@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">commerce</string>
+    <string name="app_logo">app logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="commerce">Commerce</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register_navigate">No account? Register now</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="tel">Tel</string>
+    <string name="register_for_commerce">Register for commerce</string>
+    <string name="information">Information</string>
+    <string name="register">Register</string>
+    <string name="have_account_login">Have account? Login</string>
+    <string name="example_email_com">example@email.com</string>
+    <string name="please_enter_your_email_address">Please enter your email address</string>
+    <string name="confirm">Confirm</string>
+    <string name="forgot_password_header">Forgot password</string>
+</resources>
