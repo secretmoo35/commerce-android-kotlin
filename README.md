@@ -1,6 +1,6 @@
 # commerce-android-kotlin
 
-Example a android with kotlin
+Example android app with kotlin
 
 ### Activities
 - Login
