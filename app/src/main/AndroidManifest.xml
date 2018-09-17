@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Controller.LoginActivity"
+            android:name=".Controllers.LoginActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,11 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity android:name=".LoginActivity"></activity> -->
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".Controller.RegisterActivity"
+            android:name=".Controllers.RegisterActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".Controller.ForgotPasswordActivity"></activity>
+        <activity android:name=".Controllers.ForgotPasswordActivity" />
+        <activity android:name=".Controllers.CategoryActivity" />
+        <activity android:name=".Controllers.ProductActivity"></activity>
     </application>
 
 </manifest>

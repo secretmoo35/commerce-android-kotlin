@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorApp"
-        tools:context=".Controller.RegisterActivity">
+        tools:context=".Controllers.RegisterActivity">
 
         <ImageView
             android:id="@+id/registerImageView"

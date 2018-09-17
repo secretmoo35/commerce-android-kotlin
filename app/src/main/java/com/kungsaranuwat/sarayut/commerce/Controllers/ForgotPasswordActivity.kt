@@ -1,18 +1,13 @@
-package com.kungsaranuwat.sarayut.commerce.Controller
+package com.kungsaranuwat.sarayut.commerce.Controllers
 
-import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import android.widget.Toolbar
 import com.kungsaranuwat.sarayut.commerce.R
 import kotlinx.android.synthetic.main.activity_forgot_password.*
-import android.view.Gravity
-import android.support.v4.widget.DrawerLayout
-
 
 
 class ForgotPasswordActivity : AppCompatActivity() {
@@ -21,8 +16,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
-        forgotPasswordToolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
-        forgotPasswordToolbar.setNavigationOnClickListener {
+        categoryToolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
+        categoryToolbar.setNavigationOnClickListener {
             onBackPressed()
         }
 

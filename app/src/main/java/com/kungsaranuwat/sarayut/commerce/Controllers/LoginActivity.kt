@@ -1,4 +1,4 @@
-package com.kungsaranuwat.sarayut.commerce.Controller
+package com.kungsaranuwat.sarayut.commerce.Controllers
 
 import android.content.Context
 import android.content.Intent
@@ -38,11 +38,15 @@ class LoginActivity : AppCompatActivity() {
         val password = passwordInput?.text.toString()
 
         if(username == ""){
-            return Toast.makeText(this@LoginActivity, "Please fill an username.", Toast.LENGTH_SHORT).show()
+            return Toast.makeText(this, "Please fill an username.", Toast.LENGTH_SHORT).show()
         }else if(password == ""){
-            return Toast.makeText(this@LoginActivity, "Please fill an password.", Toast.LENGTH_SHORT).show()
+            return Toast.makeText(this, "Please fill an password.", Toast.LENGTH_SHORT).show()
         }
-        Toast.makeText(this@LoginActivity, "Login completed.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Login completed.", Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this,CategoryActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
     }
 
     fun navigateRegister(view: View) {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="196dp">
+
+    <ImageView
+        android:id="@+id/categoryListItemImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="categoryImage"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/categorydigitalgoodsimage"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/categoryListItemName"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="30sp"
+        android:text="Digital goods"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/categoryListItemImage"
+        app:layout_constraintStart_toStartOf="@+id/categoryListItemImage"
+        app:layout_constraintTop_toTopOf="@+id/categoryListItemImage"
+        tools:ignore="HardcodedText" />
+</android.support.constraint.ConstraintLayout>
