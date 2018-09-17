@@ -15,7 +15,6 @@ Example android app with kotlin
     - activity_register.xml
     - RegisterActivity.kt
 
-
 > **Note:** Go back activity, Android validate email type
 
 
@@ -24,5 +23,25 @@ Example android app with kotlin
     - ForgotPasswordActivity.kt
 
 > **Note:** Add back button in toolbar, TextInputLayout
+
+
+- Category
+    - activity_category.xml
+    - CategoryActivity.kt
+    
+    - layout/category_list_item.xml
+    - Adapters/CategoryRecycleAdapter.kt
+    - Models/Category.kt
+    - Services/CategoryActivity.kt
+    - Utilities/Constants.kt
+    
+> **Note:** RecyclerView, Parameter from intent
+
+
+- Product
+    - activity_product.xml
+    - ProductActivity.kt
+
+> **Note:** Receive parameter
 
 Thank you, sarayut.kungsaranuwat@gmail.com
