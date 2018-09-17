@@ -1,3 +1,4 @@
+
 # commerce-android-kotlin
 
 Example android app with kotlin
@@ -28,7 +29,7 @@ Example android app with kotlin
 - Category
     - activity_category.xml
     - CategoryActivity.kt
-    
+	**Related files**    
     - layout/category_list_item.xml
     - Adapters/CategoryRecycleAdapter.kt
     - Models/Category.kt
