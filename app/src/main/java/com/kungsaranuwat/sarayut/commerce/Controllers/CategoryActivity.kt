@@ -24,7 +24,7 @@ class CategoryActivity : AppCompatActivity() {
     private fun loadData(){
         adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
             val intent = Intent(this, ProductActivity::class.java)
-            intent.putExtra(EXTRA_CATEGORY_SELECTED, category.name)
+            intent.putExtra(EXTRA_CATEGORY_SELECTED,category)
             startActivity(intent)
         }
         categoryRecyclerView.adapter = adapter
