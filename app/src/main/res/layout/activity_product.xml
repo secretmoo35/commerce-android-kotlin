@@ -37,4 +37,15 @@
         app:layout_constraintStart_toStartOf="@+id/productToolbar"
         app:layout_constraintTop_toTopOf="@+id/productToolbar" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productToolbar" />
+
 </android.support.constraint.ConstraintLayout>

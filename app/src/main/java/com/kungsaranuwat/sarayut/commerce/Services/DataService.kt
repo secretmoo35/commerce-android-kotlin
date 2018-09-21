@@ -45,7 +45,7 @@ object DataService {
             Product("1","Product name","categorydigitalgoodsimage","$30","4")
     )
 
-    fun getProductByCategory(cateId: String): List<Any> {
+    fun getProductByCategory(cateId: String): List<Product> {
         return products.filter { product ->
             product.categoryId == cateId
         }

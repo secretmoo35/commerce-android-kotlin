@@ -18,13 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".Controllers.RegisterActivity"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!--<activity android:name=".MainActivity" />-->
+        <activity android:name=".Controllers.RegisterActivity"/>
         <activity android:name=".Controllers.ForgotPasswordActivity" />
         <activity android:name=".Controllers.CategoryActivity" />
-        <activity android:name=".Controllers.ProductActivity"></activity>
+        <activity android:name=".Controllers.ProductActivity" />
     </application>
 
 </manifest>
