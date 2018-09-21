@@ -35,16 +35,23 @@ Example android app with kotlin
     - layout/category_list_item.xml
     - Adapters/CategoryRecycleAdapter.kt
     - Models/Category.kt
-    - Services/CategoryActivity.kt
+    - Services/DataService.kt
     - Utilities/Constants.kt
     
-> **Note:** RecyclerView, Parameter from intent
+> **Note:** RecyclerView, Parcelable(Model) for parameter
 
 
 - Product
     - activity_product.xml
     - ProductActivity.kt
+    
+    	**Related files**   
+	
+    - layout/product_list_item.xml
+    - Adapters/ProductRecycleAdapter.kt
+    - Models/Product.kt
+    - Services/DataService.kt
 
-> **Note:** Receive parameter
+> **Note:** RecyclerView and grid layout
 
 Thank you, sarayut.kungsaranuwat@gmail.com
