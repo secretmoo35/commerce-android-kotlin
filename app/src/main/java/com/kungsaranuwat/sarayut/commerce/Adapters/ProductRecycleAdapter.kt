@@ -11,11 +11,11 @@ import android.widget.TextView
 import com.kungsaranuwat.sarayut.commerce.Models.Product
 import com.kungsaranuwat.sarayut.commerce.R
 
-class ProductRecycleAdapter(val context: Context, val products: List<Product>) : RecyclerView.Adapter<ProductRecycleAdapter.Holder>() {
+class ProductRecycleAdapter(val context: Context, val products: List<Product>, private val itemClick: (Product) -> Unit) : RecyclerView.Adapter<ProductRecycleAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.product_list_item,parent,false)
-        return  Holder(view)
+        return  Holder(view, itemClick)
     }
 
     override fun getItemCount(): Int {
@@ -26,7 +26,7 @@ class ProductRecycleAdapter(val context: Context, val products: List<Product>) :
         holder?.bindProduct(products[position], context)
     }
 
-    inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    inner class Holder(itemView: View?, val itemClick: (Product) -> Unit) : RecyclerView.ViewHolder(itemView) {
         private val productImage = itemView?.findViewById<ImageView>(R.id.productListItemImage)
         private val productName = itemView?.findViewById<TextView>(R.id.productListItemName)
         private val productPrice = itemView?.findViewById<TextView>(R.id.productListItemPrice)
@@ -37,6 +37,8 @@ class ProductRecycleAdapter(val context: Context, val products: List<Product>) :
             productImage?.setImageResource(resourceId)
             productName?.text = product.name
             productPrice?.text = product.price
+
+            itemView.setOnClickListener { itemClick(product) }
         }
     }
 
